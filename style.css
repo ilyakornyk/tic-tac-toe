@@ -1,0 +1,121 @@
+body {
+    font-family: 'Balsamiq Sans', cursive;
+    background: #f5f5f5;
+}
+
+.header {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    padding-top: 20px;
+    height: 600px;
+    overflow-y: scroll;
+}
+
+.main{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.row div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #424242;
+    height: 126px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr;
+}
+
+.row div:hover {
+    cursor: pointer;
+}
+
+.row div i{
+    transition: all ease-in .5s;
+    font-size: 120px;
+}
+
+h2 {
+    display: none;
+}
+
+.copy {
+    opacity: .6;
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    ...
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    ...
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .text p {
+        padding: 0 1rem;
+        font-size: .9rem;
+    }
+
+    .row div i {
+        font-size: 92px;
+    }
+
+    .item {
+        grid-template-columns: 1.5fr 9fr 1.5fr;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .item {
+        grid-template-columns: 2fr 8fr 2fr;
+    }
+
+    .row div i {
+        font-size: 92px;
+    } 
+}
+
+
+@media only screen and (max-width: 550px) {
+    .row div i {
+        font-size: 7em;
+    } 
+
+    .main {
+        height: 90vh;
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+    .item {
+        grid-template-columns: 2.5fr 7fr 2.5fr;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    ...
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    ...
+}
